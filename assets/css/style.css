@@ -1,0 +1,164 @@
+/* TOP OF PAGE SECTION ------------------------------------------- */
+/* Universal Selector; It applies styles to the entire index.html file */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Element Selector; Applies styles to the <header> semantic element */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Element Selector; Applies styles to the <h1> elements  
+/  Could be .header-h1 to be a class selector, but since it's just one h1, I'm going to leave it like an element selector */
+h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* Class Selector; Applies styles to "seo" in the company name Horiseon located in the <h1> of the header element */
+.seo {
+    color: #d9dcd6;
+}
+
+/* Class Selector; Applies styles to the div that contains the <ul> element in header */
+.header-div {
+    padding-top: 5px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* Class Selector; Applies styles to the <ul> that contains the <li> elements in header */
+.list-style {
+    list-style-type: none;
+}
+
+/* Class Selector; Applies styles to the <li> elements inside the <ul> in header */
+.list-element {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Element Selector; Applies styles to all elements inside the <body> semantic element */
+body {
+    background-color: #d9dcd6;
+}
+
+/* Element Selector; Applies styles to all <a> elements in the HTML */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Element Selector; Applies styles to all <p> elements in the HTML */
+p {
+    font-size: 20px;
+}
+
+/* Class Selector; Applies styles to the landpage img*/
+.landpageImg {
+    height: 1000px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/* LEFT SECTION ------------------------------------------- */
+/* Class Selector; This style is for setting an area for the components of the left (75%) of the page starting from the left*/
+.section-left {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*Class Selector; Applies styles to the blue left section boxes */
+.left-section-boxes {
+    margin: 0 10px 20px 0;
+    padding: 50px;
+    min-height: 300px;
+    min-width: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Class Selector; Applies styles to the images inside the blue boxes for positioning them on the left */
+.left-image {
+    float: left;
+    margin-right: 25px;
+    max-height: 200px;
+}
+/* Class Selector; Applies styles to the images inside the blue boxes for positioning them on the right */
+.right-image {
+    float: right;
+    margin-left: 25px;
+    max-height: 200px;
+}
+
+/* Class Selector; Applies styles to the <h2> elements in left section */
+.left-section-titles {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* RIGHT SECTION ------------------------------------------- */
+/* Class Selector; This style is for setting an area for the components of the right (20%) of the page starting from the right */
+.section-right {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/* Class Selector; This style applies some space below in the <div> elemetns in the right section */
+.right-topics {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/* Class Selector; Applies styles to the <h3> elements in right section */
+.right-section-titles {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Class Selector; Applies styles to the <img> elements in right section */
+.right-topic-icons {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* Element Selector; Applies styles to the footer element */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* Element Selector for the h2 elements in the footer element*/
+.footer-title {
+    font-size: 20px;
+}
+
+/* When the header reaches a width of 1100px or less, the header topics are goin to place below the "Horiseon" h1 */
+@media screen and (max-width: 1050px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+}
